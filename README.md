@@ -1,0 +1,8 @@
+# 반응형 웹사이트 만들기 - Funny Flakes
+
+[<img src="./img/SOURCE.jpg" alt="웹사이트가기" />](https://hyemin12.github.io/responsive-webstie-funnyFlakes/)
+
+이미지를 클릭하면 사이트로 이동합니다
+<br>
+
+<hr>

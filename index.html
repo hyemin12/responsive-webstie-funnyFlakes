@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -11,12 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Sacramento&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
+  />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
     <div class="container">
       <header>
         <div class="inner">
+          <div class="mobile"><i class="fas fa-bars"></i></div>
           <div class="logo">
             <img src="./img/logo.png" alt="Funny logo" />
           </div>
@@ -54,16 +59,226 @@
             eiusmod tempor incididunt ut labore et dolore
           </p>
         </div>
-        <div class="box">CEREAKS & MILK</div>
+        <div class="box">CEREALS & MILK</div>
         <div class="content">
+          <div>
+            <h4>CEREALS</h4>
+            <ul>
+              <li>
+                <span>Oatmeal Cereal</span><span>$XX</span>
+                <div class="checkbox"></div>
+              </li>
+              <li>
+                <span>Hazelnut Cereal</span><span>$XX</span>
+                <div class="checkbox check"></div>
+              </li>
+              <li>
+                <span>Rice Cereal</span><span>$XX</span>
+                <div class="checkbox"></div>
+              </li>
+              <li>
+                <span>Integral Cereal</span><span>$XX</span>
+                <div class="checkbox"></div>
+              </li>
+              <li>
+                <span>Chocolate Cereal</span><span>$XX</span>
+                <div class="checkbox"></div>
+              </li>
+              <li>
+                <span>Raspberry Cereal</span><span>$XX</span>
+                <div class="checkbox"></div>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4>MILK</h4>
+            <ul>
+              <li>
+                <span>Almond milk</span><span>$XX</span>
+                <div class="checkbox check"></div>
+              </li>
+              <li>
+                <span>Hazelnut milk</span><span>$XX</span>
+                <div class="checkbox"></div>
+              </li>
+              <li>
+                <span>Oat milk</span><span>$XX</span>
+                <div class="checkbox"></div>
+              </li>
+              <li>
+                <span>Almond milk</span><span>$XX</span>
+                <div class="checkbox"></div>
+              </li>
+              <li>
+                <span>White milk</span><span>$XX</span>
+                <div class="checkbox"></div>
+              </li>
+              <li>
+                <span>Cocoa milk</span><span>$XX</span>
+                <div class="checkbox"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="option">
+          <p>IF YOU WANT, YOU CAN EXCHANGE MILK FOR YOGHOURT</p>
+          <div class="content">
+            <ul>
+              <li><h4>Yoghourt</h4></li>
+              <li>
+                <span>Peach</span><span>$XX</span>
+                <div class="checkbox"></div>
+              </li>
+              <li>
+                <span>Vanilla</span><span>$XX</span>
+                <div class="checkbox"></div>
+              </li>
+              <li>
+                <span>Strawberry</span><span>$XX</span>
+                <div class="checkbox"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="btn-menu">
+          <button class="btn__navy">ADD TO CART</button>
+        </div>
+      </div>
+    </section>
+    <section class="combos">
+      <div class="inner">
+        <div class="title">
+          <h4>COMBOS</h4>
+          <p>
+            We have the Funny Flakes perfect combos.<br />
+            Chose your best option
+          </p>
+        </div>
+        <div class="combo__list">
           <ul>
             <li>
-              <span>Oatmeal cereal</span><span>$XX</span>
-              <div class="checkbox"></div>
+              <p>COMBO 1</p>
+              <span>OATMEAL WITH MILK OPTIONAL FRUITS</span>
+              <span>-</span>
+              <span>OPTIONAL EXCHANGE MILK FOR YOUGHOURT</span>
+              <span>-</span>
+              <span>CHEESCAKE</span>
+              <p class="price">$XXX</p>
+              <button class="btn__outline">ADD TO CART</button>
+            </li>
+            <li>
+              <p>COMBO 2</p>
+              <span>CHOCOLATE CEREAL WITH COCOA MILK</span>
+              <span>-</span>
+              <span>OPTIONAL RASPBERRY TOPPING AGGREGATE</span>
+              <span>-</span>
+              <span>BANANA MUFFIN</span>
+              <p class="price">$XXX</p>
+              <button class="btn__outline active">ADD TO CART</button>
+            </li>
+            <li>
+              <p>COMBO 3</p>
+              <span>ALMOND CEREAL WITH OAT MILK</span>
+              <span>-</span>
+              <span>OPTIONAL FRUIT OR HAZELNUT CEREALS</span>
+              <span>-</span>
+              <span>VEGAN CHOCOLATE CAKE</span>
+              <p class="price">$XXX</p>
+              <button class="btn__outline">ADD TO CART</button>
             </li>
           </ul>
         </div>
       </div>
     </section>
+    <section class="history">
+      <div class="heart-cereal"></div>
+      <div class="text__wrapper">
+        <div class="title">
+          <h4>HISTORY</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="these-are">
+      <div class="text__wrapper">
+        <div class="title">
+          <h4>THESE ARE</h4>
+          <ul>
+            <li>
+              <div class="icon__smile">
+                <img src="./img/icon__smile.png" alt="smile" />
+              </div>
+              <div>
+                <h4>Name Creator</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              </div>
+            </li>
+            <li>
+              <div class="icon__smile">
+                <img src="./img/icon__smile.png" alt="smile" />
+              </div>
+              <div>
+                <h4>Name Creator</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</sp>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="smile-face">
+        <img src="./img/img__face.png" alt="smile" />
+      </div>
+    </section>
+    <footer>
+      <div class="inner">
+      <ul>
+        <li>
+          <h4>HERE WE ARE</h4>
+          <p>358 West 58th,<br> Street 10019</p>
+        </li>
+        <li>
+          <h4>WE ARE OPEN</h4>
+          <p>every day from<br> 8 a.m to 10 p.m</p></li>
+        <li>
+          <h4>CALL US</h4>
+          <p>+82-10-1234-5678</p>
+        </li>
+        <li>
+          <h4>SAY HELLO</h4>
+          <p>hello@funnyflakes.com</p>
+        </li>
+      </ul>
+      <ul>
+        <li class="img__loaction">
+          <img src="./img/img__location.png" alt="우유시리얼" />
+        </li>
+        <li class="email__wrapper">
+          <input type="text" placeholder="E-mail" />
+          <button class="btn__navy">SUBSCRIBE</button>
+        </li>
+        <li>
+          <h4>FOLLOW US</h4>
+          <ul class="sns__list">
+            <li><i class="fab fa-facebook-f"></i></li>
+            <li><i class="fab fa-instagram"></i></li>
+            <li><i class="fab fa-twitter"></i></li>
+            <li><i class="fab fa-blogger-b"></i></li>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
