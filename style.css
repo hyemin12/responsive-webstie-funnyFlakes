@@ -36,10 +36,7 @@ section {
   font-size: 46px;
   margin-bottom: 10px;
 }
-.title p {
-  font-size: 20px;
-}
-@media (min-width: 480px) {
+@media (max-width: 1024px) {
   section {
     width: 100%;
   }
@@ -93,7 +90,7 @@ header .inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 67px 0;
+  padding: 67px 20px;
 }
 header .inner .logo {
   cursor: pointer;
@@ -127,11 +124,23 @@ header .inner .mobile {
     transform: scale(0.7);
   }
   header .inner > ul {
-    display: none;
+    display: block;
+    width: 200px;
+    height: 100vh;
+    background-color: #e0bfb8;
+    padding: 100px 30px;
+    position: absolute;
+    top: 0px;
+    left: -200px;
+    z-index: 8;
+  }
+  header .inner > ul > li {
+    margin-bottom: 10px;
   }
   header .inner .mobile {
     display: block;
     font-size: 24px;
+    z-index: 9;
   }
 }
 /* VISUAL */
@@ -444,11 +453,14 @@ header .inner .mobile {
   flex-grow: 1;
 }
 .these-are .text__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   background-color: #f5d1c9;
 }
 .these-are .text__wrapper .title {
-  padding: 150px 180px;
+  width: 370px;
   text-align: left;
 }
 .these-are .text__wrapper .title h4 {
@@ -466,10 +478,9 @@ header .inner .mobile {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
-  height: 120px;
-  background-color: #a8baca;
-  border-radius: 50%;
+}
+.these-are .text__wrapper .title ul li .icon__smile img {
+  width: 100%;
 }
 .these-are .text__wrapper .title ul li h4 {
   margin-bottom: 20px;
@@ -496,13 +507,12 @@ header .inner .mobile {
     background-color: #a8baca;
   }
   .these-are .text__wrapper .title {
+    width: 100%;
     padding: 70px;
     text-align: left;
   }
-  .these-are .text__wrapper .title ul li .icon__smile {
-    width: 80px;
-    height: 80px;
-    background-color: transparent;
+  .these-are .text__wrapper .title ul {
+    display: flex;
   }
   .these-are .text__wrapper .title ul li h4 {
     margin-bottom: 10px;
@@ -517,6 +527,16 @@ header .inner .mobile {
     display: none;
   }
 }
+@media (max-width: 740px) {
+  .these-are .text__wrapper .title ul {
+    display: block;
+  }
+  .these-are .text__wrapper .title ul li .icon__smile {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+  }
+}
 
 /* FOOTER */
 footer {
@@ -524,14 +544,14 @@ footer {
   justify-content: center;
   height: 470px;
   background-color: #fff8ee;
-  padding: 140px 0;
+  padding: 140px 20px;
 }
 footer .inner > ul {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 70px;
   margin-bottom: 50px;
+}
+footer .inner > ul:last-child {
+  align-items: center;
 }
 footer .inner > ul > li {
   width: 250px;
@@ -540,10 +560,9 @@ footer ul li h4 {
   margin-bottom: 20px;
 }
 footer ul li.email__wrapper {
-  flex-grow: 1;
   display: flex;
   gap: 40px;
-  width: calc(250px * 2 + 70px);
+  width: 500px;
 }
 footer ul li.email__wrapper input {
   width: 250px;
@@ -570,6 +589,12 @@ footer ul li .sns__list {
 footer ul li .sns__list li:hover i {
   color: #f5d1c9;
 }
+@media (max-width: 1150px) and (min-width: 1025px) {
+  footer {
+    width: 100%;
+    justify-content: start;
+  }
+}
 @media (max-width: 1024px) {
   footer {
     height: 100%;
@@ -578,19 +603,33 @@ footer ul li .sns__list li:hover i {
   }
   footer .inner > ul {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: start;
     flex-wrap: wrap;
     gap: 30px;
     margin-bottom: 30px;
   }
   footer .inner > ul > li {
-    width: 35%;
+    width: 20%;
   }
-  footer .inner > ul:last-child {
-    display: block;
+  footer .inner > ul:last-child li.email__wrapper {
+    flex-grow: 0.9;
   }
   .img__loaction {
     display: none;
+  }
+}
+@media (max-width: 740px) {
+  footer .inner > ul {
+    justify-content: center;
+  }
+  footer .inner > ul > li {
+    width: 33%;
+  }
+  footer .inner > ul:last-child {
+    justify-content: center;
+    display: block;
+  }
+  footer .inner > ul > li {
+    margin-bottom: 30px;
   }
 }
