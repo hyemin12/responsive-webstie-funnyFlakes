@@ -8,4 +8,4 @@
 <br>
 하단 이미지(psd파일)을 보고 반응형 마크업 함
 
-<img src="./img/SOURCE.jpg" />
+<img src="./img/3146083.jpg" />
